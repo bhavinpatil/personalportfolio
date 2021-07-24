@@ -301,15 +301,18 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
+  width: 75%;
 }
-.skills__css{
+.skills__android{
+  width: 80%;
+}
+.skills__python{
+  width: 70%;
+}
+.skills__django{
   width: 85%;
 }
-.skills__js{
-  width: 65%;
-}
-.skills__ux{
+.skills__linux{
   width: 85%;
 }
 .skills__img{
