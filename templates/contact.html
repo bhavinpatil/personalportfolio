@@ -1,34 +1,70 @@
-<link rel="stylesheet" href="static\css\style.css" />
-<link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+<!doctype html>
+<html lang="en">
 
-<section class="contact section" id="contact">
-  <h2 class="section-title">Contact</h2>
-  <div class="contact__container bd-grid">
-    <form class="contact__form" method="POST" action="/contact">
-      {% csrf_token %}
-      <input type="text" id="name" name="name" placeholder="Name" class="contact__input" />
-      <input type="mail" id="email" name="email" placeholder="Email" class="contact__input" />
-      <textarea name="desc" id="message" cols="0" rows="10" class="contact__input"></textarea>
-      <input type="submit" value="Send" class="contact__button button"/>
-    </form>
-  </div>
-  <a href="/" class="contact__input" style="padding: 6px 5px; border-color: aliceblue; margin-left: 1020px;" > Back to Home </a>
-</section>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<footer class="footer">
-  <p class="footer__title">Bhavin Patil</p>
-  <div class="footer__social">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="static\css\style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <title>Personal Portfolio | contact</title>
+</head>
+
+<body>
+
+
+  <section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact__container bd-grid">
+      <form class="contact__form" method="POST" action="/contact">
+        {% csrf_token %}
+        <input type="text" id="name" name="name" placeholder="Name" class="contact__input" />
+        <input type="mail" id="email" name="email" placeholder="Email" class="contact__input" />
+        <textarea name="desc" id="message" cols="0" rows="10" class="contact__input"></textarea>
+        <input type="submit" value="Send" class="contact__button button" />
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__title">Bhavin Patil</p>
+    <div class="footer__social">
       <!-- <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a> -->
       <a target="_blank" href="https://www.instagram.com/thebhavin2831/" class="footer__icon"><i
-              class="bx bxl-instagram"></i></a>
+          class="bx bxl-instagram"></i></a>
       <a target="_blank" href="https://twitter.com/BhavinPatil10" class="footer__icon"><i
-              class="bx bxl-twitter"></i></a>
-  </div>
-  <p>&#169; 2021 copyright all right reserved</p>
-</footer>
+          class="bx bxl-twitter"></i></a>
+    </div>
+    <p style="padding-left: 750px;">&#169; 2021 copyright all right reserved <a href="/"
+        style="padding-left: 650px; color: azure;">Back to Home</a> </p>
+  </footer>
 
-<!--===== SCROLL REVEAL =====-->
-<script src="https://unpkg.com/scrollreveal"></script>
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-<!--===== MAIN JS =====-->
-<script src="static\js\main.js"></script>
+  <!--===== MAIN JS =====-->
+  <script src="static\js\main.js"></script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
